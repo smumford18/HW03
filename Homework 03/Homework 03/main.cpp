@@ -70,7 +70,7 @@ int main() {
     cout << "The even value is " << EvenTest.getValue() << endl;
     cout << "The next even value is " << EvenTest.getNext() << endl;
     cout << "The previous even value is " << EvenTest.getPrevious() << endl << endl;
- */   
+
     // Exercise 10.4
     string test;
     cout << "Enter a string s ";
@@ -78,7 +78,7 @@ int main() {
     
     string sorted = sort(test);
     cout << sorted << endl;
-    
+*/
     // Exercise 10.10
     MyInteger MyInteger1;
     
