@@ -8,116 +8,11 @@
 
 #include <iostream>
 #include <cmath>
+#include "Fan.h"
+#include "QuadraticEquation.h"
+#include "EvenNumber.h"
 
 using namespace std;
-
-class Fan
-{
-public:
-    int speed;
-    bool on;
-    double radius;
-    
-    Fan()
-    {
-        speed = 1;
-        on = false;
-        radius = 5;
-    }
-    
-    void setSpeed(int newSpeed)
-    {
-        if (newSpeed >= 1 || newSpeed <= 3)
-            speed = newSpeed;
-    }
-    
-    void setRadius(int newRadius)
-    {
-        if(newRadius > 0)
-            radius = newRadius;
-    }
-    
-    void turnOn()
-    {
-        on = true;
-    }
-    
-    void turnOff()
-    {
-        on = false;
-    }
-    
-    double getRadius()
-    {
-        return radius;
-    }
-    
-    int getSpeed()
-    {
-        return speed;
-    }
-    
-    bool getOn()
-    {
-        return on;
-    }
-    
-};
-
-class QuadraticEquation
-{
-public:
-    
-    double a;
-    double b;
-    double c;
-    
-    QuadraticEquation()
-    {
-        a = 1;
-        b = 1;
-        c = 1;
-    }
-    
-    double getA()
-    {
-        return a;
-    }
-    
-    double getB()
-    {
-        return b;
-    }
-    
-    double getC()
-    {
-        return c;
-    }
-    
-    double getDiscriminant(double a, double b, double c)
-    {
-        int disc = pow(b , 2) - 4 * a * c;
-        return disc;
-    }
-    
-    double getRoot1(double a, double b, double c)
-    {
-        double r1 = (-b + sqrt(pow(b,2)- 4 * a * c)) / (2 * a);
-        if(getDiscriminant(a, b, c) > 0)
-            return r1;
-        else
-            return 0;
-    }
-    
-    double getRoot2(double a, double b, double c)
-    {
-        double r2 = (-b - sqrt(pow(b,2)- 4 * a * c)) / (2 * a);
-        if(getDiscriminant(a, b, c) > 0)
-            return r2;
-        else
-            return 0;
-    }
-};
 
 int main() {
     
@@ -163,6 +58,12 @@ int main() {
         cout << "There is only one root. It is " << QE1.getRoot1(a, b, c) << "\n\n";
     if(QE1.getDiscriminant(a, b, c) < 0)
         cout << "The equation has no real roots.\n\n";
+    
+    // Exercise 9.11
+    EvenNumber EvenTest;
+    
+    cout << EvenTest.getValue() << endl << EvenTest.getNext() << endl << EvenTest.getPrevious() << endl;
+    
     
     return 0;
     

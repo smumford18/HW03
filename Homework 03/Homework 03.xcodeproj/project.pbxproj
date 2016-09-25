@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2018AE1D9770F200E47310 /* QuadraticEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2018AD1D9770F200E47310 /* QuadraticEquation.cpp */; };
+		4B2018B11D9773FB00E47310 /* EvenNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2018B01D9773FB00E47310 /* EvenNumber.cpp */; };
 		4B2287DE1D93951D00E81382 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2287DD1D93951D00E81382 /* main.cpp */; };
+		4B69573E1D9609D7007DE206 /* Fan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B69573D1D9609D7007DE206 /* Fan.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B2018AC1D9770DE00E47310 /* QuadraticEquation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadraticEquation.h; sourceTree = "<group>"; };
+		4B2018AD1D9770F200E47310 /* QuadraticEquation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuadraticEquation.cpp; sourceTree = "<group>"; };
+		4B2018AF1D9773EF00E47310 /* EvenNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvenNumber.h; sourceTree = "<group>"; };
+		4B2018B01D9773FB00E47310 /* EvenNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EvenNumber.cpp; sourceTree = "<group>"; };
 		4B2287DA1D93951D00E81382 /* Homework 03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Homework 03"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2287DD1D93951D00E81382 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4B69573C1D9609C5007DE206 /* Fan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fan.h; sourceTree = "<group>"; };
+		4B69573D1D9609D7007DE206 /* Fan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fan.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				4B2287DD1D93951D00E81382 /* main.cpp */,
+				4B69573C1D9609C5007DE206 /* Fan.h */,
+				4B69573D1D9609D7007DE206 /* Fan.cpp */,
+				4B2018AC1D9770DE00E47310 /* QuadraticEquation.h */,
+				4B2018AD1D9770F200E47310 /* QuadraticEquation.cpp */,
+				4B2018AF1D9773EF00E47310 /* EvenNumber.h */,
+				4B2018B01D9773FB00E47310 /* EvenNumber.cpp */,
 			);
 			path = "Homework 03";
 			sourceTree = "<group>";
@@ -120,6 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B2287DE1D93951D00E81382 /* main.cpp in Sources */,
+				4B2018AE1D9770F200E47310 /* QuadraticEquation.cpp in Sources */,
+				4B2018B11D9773FB00E47310 /* EvenNumber.cpp in Sources */,
+				4B69573E1D9609D7007DE206 /* Fan.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +264,7 @@
 				4B2287E31D93951E00E81382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
