@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B2018AE1D9770F200E47310 /* QuadraticEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2018AD1D9770F200E47310 /* QuadraticEquation.cpp */; };
 		4B2018B11D9773FB00E47310 /* EvenNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2018B01D9773FB00E47310 /* EvenNumber.cpp */; };
+		4B2018B41D97971700E47310 /* MyInteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2018B31D97971700E47310 /* MyInteger.cpp */; };
 		4B2287DE1D93951D00E81382 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B2287DD1D93951D00E81382 /* main.cpp */; };
 		4B69573E1D9609D7007DE206 /* Fan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B69573D1D9609D7007DE206 /* Fan.cpp */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 		4B2018AD1D9770F200E47310 /* QuadraticEquation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuadraticEquation.cpp; sourceTree = "<group>"; };
 		4B2018AF1D9773EF00E47310 /* EvenNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvenNumber.h; sourceTree = "<group>"; };
 		4B2018B01D9773FB00E47310 /* EvenNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EvenNumber.cpp; sourceTree = "<group>"; };
+		4B2018B21D97970800E47310 /* MyInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInteger.h; sourceTree = "<group>"; };
+		4B2018B31D97971700E47310 /* MyInteger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyInteger.cpp; sourceTree = "<group>"; };
 		4B2287DA1D93951D00E81382 /* Homework 03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Homework 03"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2287DD1D93951D00E81382 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4B69573C1D9609C5007DE206 /* Fan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fan.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				4B2018AD1D9770F200E47310 /* QuadraticEquation.cpp */,
 				4B2018AF1D9773EF00E47310 /* EvenNumber.h */,
 				4B2018B01D9773FB00E47310 /* EvenNumber.cpp */,
+				4B2018B21D97970800E47310 /* MyInteger.h */,
+				4B2018B31D97971700E47310 /* MyInteger.cpp */,
 			);
 			path = "Homework 03";
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				4B2018AE1D9770F200E47310 /* QuadraticEquation.cpp in Sources */,
 				4B2018B11D9773FB00E47310 /* EvenNumber.cpp in Sources */,
 				4B69573E1D9609D7007DE206 /* Fan.cpp in Sources */,
+				4B2018B41D97971700E47310 /* MyInteger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
