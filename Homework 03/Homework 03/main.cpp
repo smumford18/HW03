@@ -8,11 +8,14 @@
 
 #include <iostream>
 #include <cmath>
+#include <string>
 #include "Fan.h"
 #include "QuadraticEquation.h"
 #include "EvenNumber.h"
 
 using namespace std;
+
+string sort(string& s);
 
 int main() {
     
@@ -62,9 +65,31 @@ int main() {
     // Exercise 9.11
     EvenNumber EvenTest;
     
-    cout << EvenTest.getValue() << endl << EvenTest.getNext() << endl << EvenTest.getPrevious() << endl;
+    EvenTest.setValue(16);
+    cout << "The even value is " << EvenTest.getValue() << endl;
+    cout << "The next even value is " << EvenTest.getNext() << endl;
+    cout << "The previous even value is " << EvenTest.getPrevious() << endl << endl;
     
+    // Exercise 10.4
+    string test;
+    cout << "Enter a string s ";
+    cin >> test;
+    
+    string sorted = sort(test);
+    cout << sorted << endl;
     
     return 0;
     
+}
+
+string sort(string& s) {
+    
+    double size = s.size();
+    
+    for(int i=0; i <= size; i++) {
+        if(s[i] > s[i+1])
+            swap(s[i],s[i+1]);
+    }
+    
+    return s;
 }

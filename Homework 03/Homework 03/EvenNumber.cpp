@@ -13,6 +13,11 @@ EvenNumber::EvenNumber()
     value = 2;
 }
 
+void EvenNumber::setValue(int newValue)
+{
+    value = newValue;
+}
+
 int EvenNumber::getValue()
 {
     return value;
@@ -20,12 +25,14 @@ int EvenNumber::getValue()
 
 int EvenNumber::getNext()
 {
-    value += 2;
-    return value;
+    int temp0 = value;
+    temp0 += 2;
+    return temp0;
 }
 
 int EvenNumber::getPrevious()
 {
-    value -= 2;
-    return value;
+    int temp1 = value;
+    temp1 -= 2;
+    return temp1;
 }

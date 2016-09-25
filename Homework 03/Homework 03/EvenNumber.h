@@ -18,6 +18,7 @@ public:
     
     EvenNumber();
     
+    void setValue(int newValue);
     int getValue();
     int getNext();
     int getPrevious();
