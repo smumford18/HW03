@@ -9,6 +9,7 @@
 #ifndef MyInteger_h
 #define MyInteger_h
 
+
 class MyInteger
 {
     int value;
@@ -17,7 +18,7 @@ public:
     
     MyInteger();
     
-    const int getValue();
+    const int getValue() const;
     const bool isEven();
     const bool isOdd();
     const bool isPrime();
@@ -33,7 +34,7 @@ public:
     const bool equals(int);
     const bool equals(const MyInteger&);
     
-    static bool parseInt(const string&);
+    //static bool parseInt(const string&);
     
 };
 

@@ -10,10 +10,10 @@
 
 MyInteger::MyInteger()
 {
-    value = 4;
+    value = 11;
 }
 
-const int MyInteger::getValue()
+const int MyInteger::getValue() const
 {
     return value;
 }
@@ -76,26 +76,26 @@ bool MyInteger::isPrime(int x)
     return true;
 }
 
-bool MyInteger::isEven(const MyInteger&)
+bool MyInteger::isEven(const MyInteger& x)
 {
-    if(MyInteger& % 2==0)
+    if(x.getValue() % 2==0)
         return true;
     else
         return false;
 }
 
-bool MyInteger::isOdd(const MyInteger&)
+bool MyInteger::isOdd(const MyInteger& x)
 {
-    if(MyInteger& % 2 != 0)
+    if(x.getValue() % 2 != 0)
         return true;
     else
         return false;
 }
 
-bool MyInteger::isPrime(const MyInteger&)
+bool MyInteger::isPrime(const MyInteger& x)
 {
-    for(int i=2; i < MyInteger&; i++) {
-        int test2 = MyInteger& % i;
+    for(int i=2; i < x.getValue(); i++) {
+        int test2 = x.getValue() % i;
         if(test2 == 0) {
             return false;
             break;
