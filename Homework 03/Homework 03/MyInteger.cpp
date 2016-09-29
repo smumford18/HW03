@@ -103,3 +103,9 @@ bool MyInteger::isPrime(const MyInteger& x)
     }
     return true;
 }
+/*
+static int parseInt(const string& s)
+{
+    int r = stoi(s);
+    return r;
+}*/

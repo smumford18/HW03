@@ -79,14 +79,30 @@ int main() {
     string sorted = sort(test);
     cout << sorted << endl;
 */
+    
     // Exercise 10.10
     MyInteger MyInteger1;
     
-    cout << MyInteger1.getValue() << endl;
-    cout << MyInteger1.isEven() << endl;
-    cout << MyInteger1.isOdd() << endl;
-    cout << MyInteger1.isPrime() << endl;
+    int a = 2;
+    int b = 4;
     
+    cout << MyInteger1.getValue() << endl;
+    cout << "Even: " << MyInteger1.isEven() << endl;
+    cout << "Odd: " << MyInteger1.isOdd() << endl;
+    cout << "Prime: " << MyInteger1.isPrime() << endl;
+    
+    cout << "Even: " << MyInteger1.isEven(a) << endl;
+    cout << "Odd: " << MyInteger1.isOdd(a) << endl;
+    cout << "Prime: " << MyInteger1.isPrime(a) << endl;
+    
+    cout << "Even: " << MyInteger1.isEven(a) << endl;
+    cout << "Odd: " << MyInteger1.isOdd(a) << endl;
+    cout << "Prime: " << MyInteger1.isPrime(a) << endl;
+    
+    cout << "Even: " << MyInteger1.isEven(b) << endl;
+    cout << "Even: " << MyInteger1.isEven(b) << endl;
+    
+    //cout << MyInteger1.parseInt("silent") << endl;
     
     return 0;
     

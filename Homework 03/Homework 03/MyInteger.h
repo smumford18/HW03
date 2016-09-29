@@ -8,7 +8,9 @@
 
 #ifndef MyInteger_h
 #define MyInteger_h
+#include <string>
 
+using namespace std;
 
 class MyInteger
 {
@@ -34,7 +36,7 @@ public:
     const bool equals(int);
     const bool equals(const MyInteger&);
     
-    //static bool parseInt(const string&);
+    //static int parseInt(const string&);
     
 };
 
