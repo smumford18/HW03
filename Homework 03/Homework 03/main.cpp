@@ -19,7 +19,7 @@ using namespace std;
 string sort(string& s);
 
 int main() {
-/*
+
     // Exercise 9.2
     Fan fan1;
     Fan fan2;
@@ -73,36 +73,52 @@ int main() {
 
     // Exercise 10.4
     string test;
-    cout << "Enter a string s ";
+    cout << "Enter a string ";
     cin >> test;
-    
+ 
     string sorted = sort(test);
-    cout << sorted << endl;
-*/
+    cout << sorted << endl << endl;
+
     
     // Exercise 10.10
-    MyInteger MyInteger1;
+    MyInteger MyInteger1(11);
     
-    int a = 2;
-    int b = 4;
+    int z = 2;
     
-    cout << MyInteger1.getValue() << endl;
-    cout << "Even: " << MyInteger1.isEven() << endl;
-    cout << "Odd: " << MyInteger1.isOdd() << endl;
-    cout << "Prime: " << MyInteger1.isPrime() << endl;
+    cout << "For the value: " << MyInteger1.getValue() << endl;
+    //Constant functions
+    if(MyInteger1.isEven() == 1)
+        cout << "The value is even" <<endl;
+    if(MyInteger1.isOdd() == 1)
+        cout << "The value is odd" << endl;
+    if(MyInteger1.isPrime() == 1)
+        cout << "The value is prime\n\n";
+    else
+        cout << "The value is not prime\n\n";
     
-    cout << "Even: " << MyInteger1.isEven(a) << endl;
-    cout << "Odd: " << MyInteger1.isOdd(a) << endl;
-    cout << "Prime: " << MyInteger1.isPrime(a) << endl;
+    cout << "For the value: " << z << endl;
+    // Static pass by value function
+    if(MyInteger::isEven(z) == 1)
+        cout << "The value is even\n";
+    if(MyInteger::isOdd(z) == 1)
+        cout << "The value is odd\n";
+    if(MyInteger::isPrime(z) == 1)
+        cout << "The value is prime\n\n";
+    else
+        cout << "The value is not prime\n\n";
     
-    cout << "Even: " << MyInteger1.isEven(a) << endl;
-    cout << "Odd: " << MyInteger1.isOdd(a) << endl;
-    cout << "Prime: " << MyInteger1.isPrime(a) << endl;
+    cout << "For the value of the object: " << MyInteger1.getValue() << endl;
+    // Static pass by reference functions
+    if(MyInteger::isEven(MyInteger1) == 1)
+        cout << "The value is even" << endl;
+    if(MyInteger::isOdd(MyInteger1) == 1)
+        cout << "The value is odd" << endl;
+    if(MyInteger::isPrime(MyInteger1) == 1)
+        cout << "The value is prime \n\n";
+    else
+        cout << "The value is not prime\n\n";
     
-    cout << "Even: " << MyInteger1.isEven(b) << endl;
-    cout << "Even: " << MyInteger1.isEven(b) << endl;
-    
-    //cout << MyInteger1.parseInt("silent") << endl;
+    cout << "The parsed string is " << MyInteger1.parseInt("10") << "\n\n";
     
     return 0;
     
@@ -110,12 +126,15 @@ int main() {
 
 string sort(string& s) {
     
-    double size = s.size();
-    
-    for(int i=0; i <= size; i++) {
-        if(s[i] > s[i+1])
-            swap(s[i],s[i+1]);
+    double size = s.length();
+    for(int j=0; j <= size; j++) {
+        for(int i=0; i < size-1; i++) {
+            if(s[i] > s[i+1]) {
+                    char temp = s[i];
+                    s[i] = s[i+1];
+                    s[i+1] = temp;
+            }
+        }
     }
-    
     return s;
 }

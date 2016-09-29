@@ -8,9 +8,9 @@
 
 #include "MyInteger.h"
 
-MyInteger::MyInteger()
+MyInteger::MyInteger(int newVal)
 {
-    value = 11;
+    value = newVal;
 }
 
 const int MyInteger::getValue() const
@@ -38,7 +38,7 @@ const bool MyInteger::isOdd()
 
 const bool MyInteger::isPrime()
 {
-    for(int i=2; i < value; i++) {
+    for(int i=2; i < 10; i++) {
         int test2 = value % i;
         if(test2 == 0) {
             return false;
@@ -50,7 +50,7 @@ const bool MyInteger::isPrime()
 
 bool MyInteger::isEven(int x)
 {
-    if(x %2 == 0)
+    if(x % 2 == 0)
         return true;
     else
         return false;
@@ -58,7 +58,7 @@ bool MyInteger::isEven(int x)
 
 bool MyInteger::isOdd(int x)
 {
-    if(x%2 != 0)
+    if(x % 2 != 0)
         return true;
     else
         return false;
@@ -66,7 +66,7 @@ bool MyInteger::isOdd(int x)
 
 bool MyInteger::isPrime(int x)
 {
-    for(int i=2; i < x; i++) {
+    for(int i=2; i < 10; i++) {
         int test2 = x % i;
         if(test2 == 0) {
             return false;
@@ -103,9 +103,26 @@ bool MyInteger::isPrime(const MyInteger& x)
     }
     return true;
 }
-/*
-static int parseInt(const string& s)
+
+const bool MyInteger::equals(int y)
+{
+    if(getValue() == y)
+        return true;
+    else
+        return false;
+}
+
+const bool MyInteger::equals(const MyInteger& p)
+{
+    if(p.getValue() == getValue())
+        return true;
+    else
+        return false;
+}
+
+
+int MyInteger::parseInt(const string& s)
 {
     int r = stoi(s);
     return r;
-}*/
+}

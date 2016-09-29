@@ -18,7 +18,7 @@ class MyInteger
     
 public:
     
-    MyInteger();
+    MyInteger(int);
     
     const int getValue() const;
     const bool isEven();
@@ -36,7 +36,7 @@ public:
     const bool equals(int);
     const bool equals(const MyInteger&);
     
-    //static int parseInt(const string&);
+    static int parseInt(const string&);
     
 };
 
