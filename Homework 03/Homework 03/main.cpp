@@ -118,12 +118,19 @@ int main() {
     else
         cout << "The value is not prime\n\n";
     
+    if(MyInteger1.equals(11) == MyInteger1.equals(MyInteger1))
+        cout << "The value of the object is the same as the specified value." << endl;
+    
+    if(MyInteger1.equals(MyInteger1) == MyInteger1.equals(10))
+        cout << "The value of the object is the same as the specified value." << endl;
+    
     cout << "The parsed string is " << MyInteger1.parseInt("10") << "\n\n";
     
     return 0;
     
 }
 
+//Function to alphabetize a string
 string sort(string& s) {
     
     double size = s.length();

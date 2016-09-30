@@ -8,21 +8,25 @@
 
 #include "EvenNumber.h"
 
+//Constructor function
 EvenNumber::EvenNumber()
 {
     value = 2;
 }
 
+//Setter function for the value of the object
 void EvenNumber::setValue(int newValue)
 {
     value = newValue;
 }
 
+//Getter function for the value of the object
 int EvenNumber::getValue()
 {
     return value;
 }
 
+//Function to calculate and return the next even number after the value of the object
 int EvenNumber::getNext()
 {
     int temp0 = value;
@@ -30,6 +34,7 @@ int EvenNumber::getNext()
     return temp0;
 }
 
+//Function to calculate and return the previous even number before the value of the object
 int EvenNumber::getPrevious()
 {
     int temp1 = value;

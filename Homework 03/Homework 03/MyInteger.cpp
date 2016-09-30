@@ -8,16 +8,19 @@
 
 #include "MyInteger.h"
 
+//Constructor function
 MyInteger::MyInteger(int newVal)
 {
     value = newVal;
 }
 
+//Getter function for the value of the object
 const int MyInteger::getValue() const
 {
     return value;
 }
 
+//Constant function that checks for an even number
 const bool MyInteger::isEven()
 {
     int test = value % 2;
@@ -27,6 +30,7 @@ const bool MyInteger::isEven()
         return false;
 }
 
+//Constant function that checks for an odd number
 const bool MyInteger::isOdd()
 {
     int test1 = value % 2;
@@ -36,6 +40,7 @@ const bool MyInteger::isOdd()
         return false;
 }
 
+//Constant function that checks for a prime number
 const bool MyInteger::isPrime()
 {
     for(int i=2; i < 10; i++) {
@@ -48,6 +53,7 @@ const bool MyInteger::isPrime()
     return true;
 }
 
+//Static function that checks to see if the value passed in is even
 bool MyInteger::isEven(int x)
 {
     if(x % 2 == 0)
@@ -56,6 +62,7 @@ bool MyInteger::isEven(int x)
         return false;
 }
 
+//Static function that checks to see if the value passed in is odd
 bool MyInteger::isOdd(int x)
 {
     if(x % 2 != 0)
@@ -64,6 +71,7 @@ bool MyInteger::isOdd(int x)
         return false;
 }
 
+//Static function that checks to see if the value passed in is prime
 bool MyInteger::isPrime(int x)
 {
     for(int i=2; i < 10; i++) {
@@ -76,6 +84,7 @@ bool MyInteger::isPrime(int x)
     return true;
 }
 
+//Static function that checks to see if the value of the object is even
 bool MyInteger::isEven(const MyInteger& x)
 {
     if(x.getValue() % 2==0)
@@ -84,6 +93,7 @@ bool MyInteger::isEven(const MyInteger& x)
         return false;
 }
 
+//Static function that checks to see if the value of the object is odd
 bool MyInteger::isOdd(const MyInteger& x)
 {
     if(x.getValue() % 2 != 0)
@@ -92,6 +102,7 @@ bool MyInteger::isOdd(const MyInteger& x)
         return false;
 }
 
+//Static function that checks to see if the value of the object is prime
 bool MyInteger::isPrime(const MyInteger& x)
 {
     for(int i=2; i < x.getValue(); i++) {
@@ -104,6 +115,7 @@ bool MyInteger::isPrime(const MyInteger& x)
     return true;
 }
 
+//Function that checks to see if the passed in value is equal to the value of the object
 const bool MyInteger::equals(int y)
 {
     if(getValue() == y)
@@ -112,6 +124,7 @@ const bool MyInteger::equals(int y)
         return false;
 }
 
+//Function that checks to see if the value of the object is equal to the value passed in
 const bool MyInteger::equals(const MyInteger& p)
 {
     if(p.getValue() == getValue())
@@ -120,7 +133,7 @@ const bool MyInteger::equals(const MyInteger& p)
         return false;
 }
 
-
+//Function that converts a string into an integer
 int MyInteger::parseInt(const string& s)
 {
     int r = stoi(s);
