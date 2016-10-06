@@ -9,12 +9,20 @@
 #include "QuadraticEquation.h"
 #include <cmath>
 
-//Constructor function
+//No argument constructor function
     QuadraticEquation::QuadraticEquation()
     {
         a = 1;
         b = 1;
         c = 1;
+    }
+
+//Constructor function
+    QuadraticEquation::QuadraticEquation(int newA, int newB, int newC)
+    {
+        a = newA;
+        b = newB;
+        c = newC;
     }
 
 //Getter for a
@@ -36,27 +44,27 @@
     }
 
 //Function that calculates and returns the discriminant
-    double QuadraticEquation::getDiscriminant(double a, double b, double c)
+    double QuadraticEquation::getDiscriminant()
     {
-        int disc = pow(b , 2) - 4 * a * c;
+        int disc = pow(getB() , 2) - 4 * getA() * getC();
         return disc;
     }
 
 //Function that calculates and returns the first root
-    double QuadraticEquation::getRoot1(double a, double b, double c)
+    double QuadraticEquation::getRoot1()
     {
-        double r1 = (-b + sqrt(pow(b,2)- 4 * a * c)) / (2 * a);
-        if(getDiscriminant(a, b, c) > 0)
+        double r1 = (-getB() + sqrt(pow(getB(),2)- 4 * getA() * getC())) / (2 * getA());
+        if(getDiscriminant() > 0)
             return r1;
         else
             return 0;
     }
 
 //Function that calculates and returns the second root
-    double QuadraticEquation::getRoot2(double a, double b, double c)
+    double QuadraticEquation::getRoot2()
     {
-        double r2 = (-b - sqrt(pow(b,2)- 4 * a * c)) / (2 * a);
-        if(getDiscriminant(a, b, c) > 0)
+        double r2 = (-getB() - sqrt(pow(getB(),2)- 4 * getA() * getC())) / (2 * getA());
+        if(getDiscriminant() > 0)
             return r2;
         else
             return 0;

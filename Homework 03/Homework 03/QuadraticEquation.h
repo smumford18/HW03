@@ -19,13 +19,14 @@ class QuadraticEquation
 public:
     
     QuadraticEquation();
+    QuadraticEquation(int, int, int);
     
     double getA();
     double getB();
     double getC();
-    double getDiscriminant(double a, double b, double c);
-    double getRoot1(double a, double b, double c);
-    double getRoot2(double a, double b, double c);
+    double getDiscriminant();
+    double getRoot1();
+    double getRoot2();
     
 };
 

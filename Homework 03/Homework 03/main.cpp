@@ -56,12 +56,18 @@ int main() {
     cout << "c: ";
     cin >> c;
     
-    if(QE1.getDiscriminant(a, b, c) > 0)
-        cout << "The roots are " << QE1.getRoot1(a, b, c) << " and " << QE1.getRoot2(a, b, c) << "\n\n";
-    if(QE1.getDiscriminant(a, b, c) == 0)
-        cout << "There is only one root. It is " << QE1.getRoot1(a, b, c) << "\n\n";
-    if(QE1.getDiscriminant(a, b, c) < 0)
+    QuadraticEquation QE2(a,b,c);
+    
+    if(QE1.getDiscriminant() > 0)
+        cout << "The roots are " << QE1.getRoot1() << " and " << QE1.getRoot2() << "\n\n";
+    if(QE1.getDiscriminant() == 0)
+        cout << "There is only one root. It is " << QE1.getRoot1() << "\n\n";
+    if(QE1.getDiscriminant() < 0)
         cout << "The equation has no real roots.\n\n";
+    
+    cout << QE2.getDiscriminant() << endl;
+    cout << QE2.getRoot1() << endl;
+    cout << QE2.getRoot2() << "\n\n";
     
     // Exercise 9.11
     EvenNumber EvenTest;
